@@ -49,10 +49,11 @@ function toggleStatus(e) {
   e.preventDefault(); 
   statusOutput.classList.toggle("hidden");
 
-  // Change mainTitle background color based on visibility of statusOutput
+  // Change mainTitle background color based on visibility of statusOutput (Task 7)
+  //Hides the yellow background when the statusOutput is hidden until clicked again, where it appears
   if (!statusOutput.classList.contains("hidden")) {
     mainTitle.style.backgroundColor = "yellow";
-    createTimestamp(); // Task 8: add timestamp
+    createTimestamp(); // Task 8: add timestamp when shown, when toggled multiple times, more timestamps appear
   } else {
     mainTitle.style.backgroundColor = "";
   }
